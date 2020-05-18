@@ -48,3 +48,14 @@ server.listen(3000, function () {
     console.log('Listening to Port: 3000');
 })
 ```
+
+## Reading from a JSON File
+1. Import files modiule
+`var fs = require('fs');`
+2. Create a method to read specific object in JSON
+```
+fs.readFile('db.json', function (err, data) {
+        var tasks = JSON.parse(data.toString()).task;
+        res.send(tasks);
+    })
+```

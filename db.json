@@ -1,0 +1,8 @@
+{
+    "task": [
+        "Upload to Git",
+        "Make proper commits",
+        "Write to readme.md properly"
+    ],
+    "description": "All the codes must be committed to Github before Leaving"
+}
