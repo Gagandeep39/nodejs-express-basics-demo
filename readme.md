@@ -27,3 +27,24 @@ app.listen(3000, function () {
 ```
 
 ## Steps to Use Node JS + Express
+1. Import Libraries
+```
+var http = require('http')
+var express = require('express');
+```
+2. Crete an Object of Express
+`var app = express();`
+3. Create a server with express as a listener
+`var server = http.createServer(app)`
+4. Handle Specific Paths with Express
+```
+app.get('/', function (req, res) {
+    res.send('<h1>This is a GET request at path: / </h1>')
+})
+```
+5. Create an Http listener
+```
+server.listen(3000, function () {
+    console.log('Listening to Port: 3000');
+})
+```
